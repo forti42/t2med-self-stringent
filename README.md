@@ -1,8 +1,10 @@
+Editor´s notice: T2med ist die Eigenschreibweise seitens T2med.
+
 # t2med-self
 
-Ein Check-in-Terminal für die Arztpraxis: Patienten lesen ihre Gesundheitskarte ein, prüfen ihre Kontaktdaten, unterschreiben bei Bedarf die Datenschutzerklärung und können ein freiwilliges Patientenfoto aufnehmen. Die Anwendung trägt sie entsprechend Termin und Anliegen in die konfigurierten t2med-Wartebereiche ein.
+Ein Check-in-Terminal für die Arztpraxis: Patienten lesen ihre Gesundheitskarte ein, prüfen ihre Kontaktdaten, unterschreiben bei Bedarf die Datenschutzerklärung und können ein freiwilliges Patientenfoto aufnehmen. Die Anwendung trägt sie entsprechend Termin und Anliegen in die konfigurierten T2med-Wartebereiche ein.
 
-> **Benutzung auf eigene Gefahr.** Das System greift lesend und schreibend auf t2med zu. Änderungen an der t2med-Schnittstelle können einzelne Funktionen oder das gesamte System außer Betrieb setzen.
+> **Benutzung auf eigene Gefahr.** Das System greift lesend und schreibend auf T2med zu. Änderungen an der T2med-Schnittstelle können einzelne Funktionen oder das gesamte System außer Betrieb setzen.
 
 <a href="fotos/IMG_4390.jpeg"><img src="fotos/IMG_4390.jpeg" width="640" alt="Check-in-Terminal im Gehäuse mit der Startseite Karte einlesen"></a>
 
@@ -21,9 +23,9 @@ Auf GitHub bei einer Dateivorschau **„Download raw file“** wählen; einzelne
 
 ## Voraussetzungen und Hardware
 
-- **Server:** Linux mit Netzwerkzugang zu t2med. Der Installer ist für Debian 12/13 und Raspberry Pi OS Bookworm/Trixie ausgelegt. Die Einrichtung ist auch auf einem bereits für [fragebogenpi.de](https://fragebogenpi.de) eingesetzten Raspberry Pi möglich.
+- **Server:** Linux mit Netzwerkzugang zu T2med. Der Installer ist für Debian 12/13 und Raspberry Pi OS Bookworm/Trixie ausgelegt. Die Einrichtung ist auch auf einem bereits für [fragebogenpi.de](https://fragebogenpi.de) eingesetzten Raspberry Pi möglich.
 - **Terminal:** iPad der 7. oder 8. Generation im Querformat; für den gezeigten Aufbau wird ein günstiges Refurbished-Gerät verwendet. WLAN und dauerhafte Stromversorgung vorsehen.
-- **Kartenleser:** Ein in t2med eingerichteter und erreichbarer eGK-Kartenleser.
+- **Kartenleser:** Ein in T2med eingerichteter und erreichbarer eGK-Kartenleser.
 - **Gehäuse:** [PureMounts Tablet-Halterung](https://www.amazon.de/dp/B0C9F18Q95), abschließbares Stahlgehäuse, VESA 75 × 75 mm.
 - **Aufstellung:** Am besten auf einem Tisch so positionieren, dass andere Personen den Bildschirm nicht einsehen können. Tischhöhe und Erreichbarkeit so wählen, dass sich das Terminal auch im Sitzen gut bedienen lässt – insbesondere für kleinere Menschen und Menschen im Rollstuhl.
 
@@ -45,7 +47,7 @@ Der Patient steckt seine Gesundheitskarte in das Lesegerät und tippt auf **„K
 
 ### 2. Die Karte wird eingelesen
 
-Das Terminal liest die Karte und ruft die für die Anmeldung benötigten Angaben aus t2med ab. Währenddessen bittet es um einen Moment Geduld.
+Das Terminal liest die Karte und ruft die für die Anmeldung benötigten Angaben aus T2med ab. Währenddessen bittet es um einen Moment Geduld.
 
 <a href="fotos/IMG_4391.jpeg"><img src="fotos/IMG_4391.jpeg" width="640" alt="Schritt 2: Warteanzeige während des Einlesens der Gesundheitskarte"></a>
 
@@ -73,15 +75,16 @@ Bei einem akuten Problem oder einem anderen Anliegen kann der Patient eine kurze
 
 <a href="fotos/IMG_4395.jpeg"><img src="fotos/IMG_4395.jpeg" width="640" alt="Schritt 6: Das Anliegen in wenigen Worten beschreiben"></a>
 
-### 7. Datenschutzerklärung unterschreiben
+### 7. Datenschutzinformation unterschreiben (Vorsicht - Unterschrieben werden nur Einwilligungen!)
 
-Wenn eine neue Unterschrift benötigt wird, erscheint die Datenschutzerklärung. Der Patient liest den Text und unterschreibt mit dem Finger. Die zusätzlichen Einwilligungen für E-Mail und SMS sind unabhängig voneinander freiwillig.
+Wenn eine neue Unterschrift benötigt wird, erscheint die Datenschutzinformation. Der Patient liest den Text und bestätigt, gelesen zu haben. Die zusätzlichen Einwilligungen für E-Mail und SMS sind unabhängig voneinander freiwillig - die Unterschrift kann auf eigenes Risiko als Indiz gewünscht sein, dass der Patient einer unverschlüsselten Kommunikation zustimmt. Hier bestehen aber Unsicherheiten, ob eine Einwilligung in dieser Form ausreicht.
+(Anm. e. DSB: Es sind Datenschutzinformationen, keine Erklärung. Die Kenntnisnahme ist zu bestätigen, aber nicht zu unterschreiben. Was nicht erforderlich ist... aber Einwilligung wiederum ist zu unterschreiben.)
 
 <a href="fotos/IMG_4396.jpeg"><img src="fotos/IMG_4396.jpeg" width="640" alt="Schritt 7: Datenschutzerklärung mit Unterschriftsfeld und optionalen Einwilligungen"></a>
 
 ### 8. Über das Patientenfoto entscheiden
 
-Das Terminal fragt, ob ein Foto für die Patientenakte aufgenommen werden darf. Der Patient kann zustimmen oder ohne Foto fortfahren.
+Das Terminal fragt, ob ein Foto für die Patientenakte aufgenommen werden darf. Der Patient kann zustimmen oder ohne Foto fortfahren. Unterschrift?
 
 <a href="fotos/IMG_4397.jpeg"><img src="fotos/IMG_4397.jpeg" width="640" alt="Schritt 8: Einwilligung in ein freiwilliges Patientenfoto"></a>
 
@@ -103,25 +106,25 @@ Die Abschlussseite nennt den nächsten Schritt und erinnert an die Gesundheitska
 
 <a href="fotos/IMG_4400.jpeg"><img src="fotos/IMG_4400.jpeg" width="640" alt="Schritt 11: Abschlussmeldung mit dem nächsten Schritt und Erinnerung an die Gesundheitskarte"></a>
 
-### 12. Das Ergebnis in t2med
+### 12. Das Ergebnis in T2med
 
-Für das Praxisteam stehen die übertragenen Angaben in t2med bereit. Das Bild zeigt den Eintrag zur Telefonnummer und die gespeicherte Datenschutzerklärung einschließlich des SMS-Pins. Der Patient wird außerdem dem für seinen Ablauf konfigurierten Wartebereich zugeordnet.
+Für das Praxisteam stehen die übertragenen Angaben in T2med bereit. Das Bild zeigt den Eintrag zur Telefonnummer und die gespeicherte Datenschutzerklärung einschließlich des SMS-Pins. Der Patient wird außerdem dem für seinen Ablauf konfigurierten Wartebereich zugeordnet.
 
-<a href="fotos/IMG_4403.jpeg"><img src="fotos/IMG_4403.jpeg" width="640" alt="Schritt 12: Karteikarteneinträge zu Kontaktdaten und Datenschutzerklärung mit SMS-Pin in t2med"></a>
+<a href="fotos/IMG_4403.jpeg"><img src="fotos/IMG_4403.jpeg" width="640" alt="Schritt 12: Karteikarteneinträge zu Kontaktdaten und Datenschutzerklärung mit SMS-Pin in T2med"></a>
 
 ## Einrichtung
 
-### 1. t2med-Benutzer anlegen
+### 1. T2med-Benutzer anlegen
 
-Für das Terminal einen t2med-Benutzer einrichten. Über dessen Konto arbeitet das Gerät nach der Mitarbeiteranmeldung. Als Vorlage dient der folgende Screenshot mit den Rechtebereichen **eAkte, Patient, Self-CheckIn, Terminkalender und Wartezimmer**. Die einzelnen Unterrechte sind darin eingeklappt.
+Für das Terminal einen T2med-Benutzer einrichten. Über dessen Konto arbeitet das Gerät nach der Mitarbeiteranmeldung. Als Vorlage dient der folgende Screenshot mit den Rechtebereichen **eAkte, Patient, Self-CheckIn, Terminkalender und Wartezimmer**. Die einzelnen Unterrechte sind darin eingeklappt.
 
-<a href="fotos/Rechte%20t2med-benutzer.png"><img src="fotos/Rechte%20t2med-benutzer.png" width="380" alt="In t2med markierte Rechtebereiche des Terminalbenutzers"></a>
+<a href="fotos/Rechte%20t2med-benutzer.png"><img src="fotos/Rechte%20t2med-benutzer.png" width="380" alt="In T2med markierte Rechtebereiche des Terminalbenutzers"></a>
 
 Schreibende Rechte werden insbesondere benötigt, um:
 
 - Telefonnummern und E-Mail-Adressen einzutragen oder zu korrigieren,
-- unterschriebene Datenschutzerklärungen und zugehörige Einwilligungen zu speichern,
-- Patientenfotos in t2med abzulegen,
+ACHTUNG! - unterschriebene Datenschutzerklärungen und zugehörige Einwilligungen zu speichern, 
+- Patientenfotos in T2med abzulegen,
 - Patienten in Wartebereiche zu setzen und zugehörige Notizen zu hinterlegen.
 
 ### 2. Server installieren
@@ -132,11 +135,11 @@ Das [Release-Paket 1.6.4](t2med-checkin-1.6.4.tar.gz) auf den Linux-Server über
 sudo bash install.sh
 ```
 
-Der Installer richtet die benötigten Pakete und einen eigenen HTTPS-Dienst ein. Er fragt t2med-Server, Zugangsdaten, Kartenleser, Arztrolle, Behandlungsort und Wartebereiche ab. Abschließend legt man die vom iPad erreichbare Serveradresse und den HTTPS-Port fest; vorgeschlagen wird Port **8443**. Für die Installation werden sudo-Rechte und Zugang zu den Paketquellen benötigt.
+Der Installer richtet die benötigten Pakete und einen eigenen HTTPS-Dienst ein. Er fragt T2med-Server, Zugangsdaten, Kartenleser, Arztrolle, Behandlungsort und Wartebereiche ab. Abschließend legt man die vom iPad erreichbare Serveradresse und den HTTPS-Port fest; vorgeschlagen wird Port **8443**. Für die Installation werden sudo-Rechte und Zugang zu den Paketquellen benötigt.
 
 Die aktive Konfiguration liegt auf dem **Linux-Server** unter **`/etc/t2med-checkin/config.toml`**. Hier werden unter anderem Wartebereiche, Texte, Zeitlimits, Kamera und die einzelnen Funktionen eingestellt. Die [Standardkonfiguration](docs/config.standard.toml) dokumentiert den verwendeten Praxisaufbau; Server, Kartenleser und Kontext-IDs an die eigene Installation anpassen. Die [Konfigurationsübersicht](docs/KONFIGURATION.md) erklärt alle Optionen, das Bearbeiten und die anschließende Prüfung.
 
-**Die integrierte Fragebogenfunktion funktioniert technisch**, einschließlich Auswertung, Folgefragebögen und Speicherung in t2med. Sie hat sich im Usertest am Check-in-Terminal jedoch nicht bewährt und wird im hier beschriebenen Praxisablauf nicht genutzt. Medizinische Anamnesefragebögen sollen auf einem separaten Tablet im Wartebereich ausgefüllt werden, beispielsweise mit [fragebogenpi.de](https://fragebogenpi.de). Im dokumentierten Standard bleibt die Funktion technisch aktiviert; **leere Startlisten verhindern, dass Fragebögen gestartet werden**:
+**Die integrierte Fragebogenfunktion funktioniert technisch**, einschließlich Auswertung, Folgefragebögen und Speicherung in T2med. Sie hat sich im Usertest am Check-in-Terminal jedoch nicht bewährt und wird im hier beschriebenen Praxisablauf nicht genutzt. Medizinische Anamnesefragebögen sollen auf einem separaten Tablet im Wartebereich ausgefüllt werden, beispielsweise mit [fragebogenpi.de](https://fragebogenpi.de). Im dokumentierten Standard bleibt die Funktion technisch aktiviert; **leere Startlisten verhindern, dass Fragebögen gestartet werden**:
 
 ```toml
 [questionnaires]
@@ -147,9 +150,9 @@ existing_patient_forms = ""
 
 Die Datenschutzerklärung bleibt davon unabhängig aktiv. Ihre Vorlage liegt standardmäßig unter **`/etc/t2med-checkin/formulare/datenschutz.yaml`**. Dort Praxisangaben und Textabschnitte bearbeiten; nach abgeschlossener Anpassung den Testhinweis entfernen und die Formularversion pflegen. Die [Schrittanleitung zur Datenschutzvorlage](docs/DATENSCHUTZVORLAGE.md) zeigt die betreffenden Felder, ein Beispiel und die Prüfung.
 
-**SMS-Pins bei t2med vor 26.11:** Die beiden PNG-Dateien müssen unter `/opt/t2med/server/pins/` sowohl einzeln als auch im dortigen `symbole.zip` vorhanden sein. Zuerst den Pin-Ordner sichern, dann die Symbole ergänzen und den t2med-Server neu starten. Die [Schrittanleitung mit Downloads](t2med-checkin-1.6.4/pins/README.md) beschreibt die Einrichtung unter Erhalt vorhandener Symbole. Der Check-in-Installer erledigt diesen Schritt nicht. Soll auf SMS-Pins verzichtet werden, `sms_pin_allowed` und `sms_pin_denied` im Abschnitt `[privacy]` jeweils auf `""` setzen.
+**SMS-Pins bei T2med vor 26.11:** Die beiden PNG-Dateien müssen unter `/opt/t2med/server/pins/` sowohl einzeln als auch im dortigen `symbole.zip` vorhanden sein. Zuerst den Pin-Ordner sichern, dann die Symbole ergänzen und den T2med-Server neu starten. Die [Schrittanleitung mit Downloads](t2med-checkin-1.6.4/pins/README.md) beschreibt die Einrichtung unter Erhalt vorhandener Symbole. Der Check-in-Installer erledigt diesen Schritt nicht. Soll auf SMS-Pins verzichtet werden, `sms_pin_allowed` und `sms_pin_denied` im Abschnitt `[privacy]` jeweils auf `""` setzen.
 
-Im dokumentierten Standard ist die SQL-Änderung des Kartenvorlagedatums auf **01.01.1990 eingeschaltet**, mit `sql.mode = "local"`. Dies setzt die t2med-Datenbank auf demselben Rechner voraus. Auf einem separaten Server oder Raspberry Pi den SQL-Zugang über `ssh` oder `tcp` einrichten oder diese Zusatzfunktion gezielt ausschalten; siehe [Konfiguration](docs/KONFIGURATION.md).
+Im dokumentierten Standard ist die SQL-Änderung des Kartenvorlagedatums auf **01.01.1990 eingeschaltet**, mit `sql.mode = "local"`. Dies setzt die T2med-Datenbank auf demselben Rechner voraus. Auf einem separaten Server oder Raspberry Pi den SQL-Zugang über `ssh` oder `tcp` einrichten oder diese Zusatzfunktion gezielt ausschalten; siehe [Konfiguration](docs/KONFIGURATION.md).
 
 ### 3. iPad vorbereiten
 
@@ -161,7 +164,7 @@ Im dokumentierten Standard ist die SQL-Änderung des Kartenvorlagedatums auf **0
 6. **Geführten Zugriff** aktivieren und dafür **keine automatische Bildschirmsperre** einstellen.
 7. Als Praxisteam das Gerät anmelden, die Kamerafreigabe erteilen und den **geführten Zugriff tatsächlich starten**. Erst während dieser Sitzung bleibt das Display mit dieser Einstellung dauerhaft eingeschaltet.
 
-**Aus Sicherheitsgründen muss das Praxisteam das Gerät spätestens alle zwölf Stunden erneut mit dem t2med-Benutzer anmelden.**
+**Aus Sicherheitsgründen muss das Praxisteam das Gerät spätestens alle zwölf Stunden erneut mit dem T2med-Benutzer anmelden.**
 
 | Zum Home-Bildschirm hinzufügen | Geführten Zugriff starten |
 |---|---|
@@ -169,7 +172,7 @@ Im dokumentierten Standard ist die SQL-Änderung des Kartenvorlagedatums auf **0
 
 ## Bedienung im Praxisalltag
 
-Das Praxisteam meldet das Gerät mit dem eingerichteten t2med-Benutzer an. Bei aktivierter Fotofunktion erscheint eine kleine Kameravorschau zur Freigabe; dabei wird noch kein Foto gespeichert. Die Anmeldung gilt **höchstens zwölf Stunden**, danach ist eine erneute Mitarbeiteranmeldung nötig.
+Das Praxisteam meldet das Gerät mit dem eingerichteten T2med-Benutzer an. Bei aktivierter Fotofunktion erscheint eine kleine Kameravorschau zur Freigabe; dabei wird noch kein Foto gespeichert. Die Anmeldung gilt **höchstens zwölf Stunden**, danach ist eine erneute Mitarbeiteranmeldung nötig.
 
 Über **„Mitarbeiter“** auf der Startseite lässt sich das Gerät abmelden. Dafür sind drei Bestätigungen erforderlich. Bis zur erneuten Anmeldung ist kein Check-in möglich.
 
@@ -183,8 +186,8 @@ Den Patientenablauf zeigt die [Bildergeschichte vor der Einrichtung](#bildergesc
 
 ## Betrieb und technische Grundlage
 
-Das iPad zeigt eine Webanwendung an. Auf dem Linux-Server laufen PHP und ein eigener HTTPS-Webserver; die Anwendung kommuniziert mit t2med über dessen Schnittstellen. Die technischen Einzelheiten ergeben sich aus dem [Quellcode](t2med-checkin-1.6.4/src/).
+Das iPad zeigt eine Webanwendung an. Auf dem Linux-Server laufen PHP und ein eigener HTTPS-Webserver; die Anwendung kommuniziert mit T2med über dessen Schnittstellen. Die technischen Einzelheiten ergeben sich aus dem [Quellcode](t2med-checkin-1.6.4/src/).
 
-Updates werden aus dem vollständigen neuen Release-Verzeichnis mit `sudo bash install.sh --resume` installiert. Anschließend die Anwendung auf dem iPad vollständig schließen und neu öffnen. Nach Änderungen an t2med den Ablauf erneut prüfen. Das vom Installer erzeugte Serverzertifikat ist ein Jahr gültig und muss vor Ablauf erneuert werden.
+Updates werden aus dem vollständigen neuen Release-Verzeichnis mit `sudo bash install.sh --resume` installiert. Anschließend die Anwendung auf dem iPad vollständig schließen und neu öffnen. Nach Änderungen an T2med den Ablauf erneut prüfen. Das vom Installer erzeugte Serverzertifikat ist ein Jahr gültig und muss vor Ablauf erneuert werden.
 
-Bei Fehlermeldungen oder unklaren Übertragungen den Vorgang am Empfang prüfen und bereits gespeicherte Daten in t2med abgleichen. Offene Datenschutzübertragungen sind in der [Anleitung zum Datenschutz-Abschluss](t2med-checkin-1.6.4/docs/DATENSCHUTZ-ABSCHLUSS.md) beschrieben.
+Bei Fehlermeldungen oder unklaren Übertragungen den Vorgang am Empfang prüfen und bereits gespeicherte Daten in T2med abgleichen. Offene Datenschutzübertragungen sind in der [Anleitung zum Datenschutz-Abschluss](t2med-checkin-1.6.4/docs/DATENSCHUTZ-ABSCHLUSS.md) beschrieben.
